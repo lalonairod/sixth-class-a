@@ -1,0 +1,7 @@
+<div *ngIf="personaje$ | async as character">
+    <!-- {{personaje | json}} -->
+    <ng-container *ngFor="let item of character.character.results">
+        <img [src]="item.image" alt="">
+    </ng-container>
+     
+</div>
